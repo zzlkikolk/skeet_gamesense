@@ -15,7 +15,13 @@ def args_function(args1, *vartuples):
     print(*vartuples)
 
 
+# 指定参数类型，和返回参数
+def add_function(arg1: int, arg2: int) -> int:
+    return arg1 + arg2
+
+
 if __name__ == '__main__':
     my_function("zhang1")
     default_value_function()
-    args_function(1,12,23)
+    args_function(1, 12, 23)
+    print("加法{}".format(add_function(1, 2)))
